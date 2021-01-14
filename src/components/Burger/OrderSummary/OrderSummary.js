@@ -17,6 +17,7 @@ export default function OrderSummary(props) {
             <ul>
                 {ingredientSummary}
             </ul>
+            <p><strong>Total Price : {props.price.toFixed(2)} USD</strong></p>
             <p>Continue to checkout ?</p>
             <Button btnType="Danger" btnFunc={props.purchaseCancelHandler}>Cancel</Button>
             <Button btnType="Success" btnFunc={props.purchaseContinueHandler}>Continue</Button>
